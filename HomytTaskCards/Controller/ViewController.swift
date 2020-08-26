@@ -33,10 +33,19 @@ class ViewController: UIViewController,showNotification,UNUserNotificationCenter
         let card2 = Card(name: "card2")
         let card3 = Card(name: "card3")
         let card4 = Card(name: "card4")
+        let card5 = Card(name: "card5")
+        let card6 = Card(name: "card6")
+        let card7 = Card(name: "card7")
+
+
         cards.append(card1)
         cards.append(card2)
         cards.append(card3)
         cards.append(card4)
+        cards.append(card5)
+        cards.append(card6)
+        cards.append(card7)
+
 
         
     }
@@ -91,8 +100,12 @@ extension ViewController: UICollectionViewDataSource,UICollectionViewDelegate {
         
     }
     
+
+ 
     
 }
+
+
 
 //MARK: - for delegate using for passing data between cell and view controller.
 
@@ -111,7 +124,11 @@ extension ViewController : CellButton {
                 return
 
             }
-            CardsCollection.scrollToItem(at: indexPath, at: .left, animated: true)
+                
+                CardsCollection.scrollToItem(at: indexPath, at: .left, animated: true)
+            
+            
+          
         }
         
         else {

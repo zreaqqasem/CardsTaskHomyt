@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,33 +13,33 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HomytTaskCards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qasem Zreaq" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vu2-AR-NiR">
-                                <rect key="frame" x="20" y="104" width="197.5" height="41"/>
+                                <rect key="frame" x="20" y="60" width="197.5" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qasem" translatesAutoresizingMaskIntoConstraints="NO" id="nMh-SY-k4o">
-                                <rect key="frame" x="314" y="61" width="80" height="80"/>
+                                <rect key="frame" x="275" y="17" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="8Zz-Lz-Zbk"/>
                                     <constraint firstAttribute="height" constant="80" id="YOG-nS-stC"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="861-cm-8h5">
-                                <rect key="frame" x="20" y="149" width="374" height="2"/>
+                                <rect key="frame" x="16" y="105" width="343" height="2"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="udA-G7-uoZ"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5OI-bA-sWv">
-                                <rect key="frame" x="60" y="200" width="324" height="612"/>
+                                <rect key="frame" x="0.0" y="156" width="345" height="461"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Z6f-28-Lch">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Z6f-28-Lch">
                                     <size key="itemSize" width="316" height="537"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -47,21 +47,17 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardId" id="97z-UQ-B2V" customClass="CardCell" customModule="HomytTaskCards" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="37.5" width="316" height="537"/>
+                                        <rect key="frame" x="0.0" y="-38" width="316" height="537"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uwn-iU-Aid">
                                             <rect key="frame" x="0.0" y="0.0" width="316" height="537"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card2" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sfW-Ch-VYM">
-                                                    <rect key="frame" x="0.0" y="0.0" width="316" height="418"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="418" id="H8G-ir-ydg"/>
-                                                        <constraint firstAttribute="width" constant="316" id="wMr-RE-BGH"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="20" y="0.0" width="276" height="421"/>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qBd-G3-t9H">
-                                                    <rect key="frame" x="10" y="456" width="291" height="46"/>
+                                                    <rect key="frame" x="10" y="441" width="291" height="46"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mU0-6R-ImW">
                                                             <rect key="frame" x="0.0" y="0.0" width="135.5" height="46"/>
@@ -88,10 +84,10 @@
                                                     </subviews>
                                                 </stackView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qmO-Wv-ITl">
-                                                    <rect key="frame" x="0.0" y="0.0" width="316" height="456"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="316" height="441"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Homyt Cards Task" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0x-G1-JhJ">
-                                                            <rect key="frame" x="0.0" y="0.0" width="316" height="456"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="316" height="441"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -107,17 +103,17 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="sfW-Ch-VYM" secondAttribute="trailing" id="8Ho-CQ-bwE"/>
                                                 <constraint firstItem="qmO-Wv-ITl" firstAttribute="top" secondItem="uwn-iU-Aid" secondAttribute="top" id="9Ox-UQ-7eE"/>
-                                                <constraint firstItem="qBd-G3-t9H" firstAttribute="top" secondItem="sfW-Ch-VYM" secondAttribute="bottom" constant="38" id="MEW-02-wen"/>
+                                                <constraint firstItem="sfW-Ch-VYM" firstAttribute="leading" secondItem="uwn-iU-Aid" secondAttribute="leading" constant="20" id="9mJ-cf-pbf"/>
+                                                <constraint firstItem="qBd-G3-t9H" firstAttribute="top" secondItem="sfW-Ch-VYM" secondAttribute="bottom" constant="20" id="MEW-02-wen"/>
                                                 <constraint firstItem="sfW-Ch-VYM" firstAttribute="top" secondItem="uwn-iU-Aid" secondAttribute="top" id="OFv-i6-B6D"/>
                                                 <constraint firstAttribute="trailing" secondItem="qBd-G3-t9H" secondAttribute="trailing" constant="15" id="TCq-jf-LdF"/>
                                                 <constraint firstItem="qmO-Wv-ITl" firstAttribute="leading" secondItem="uwn-iU-Aid" secondAttribute="leading" id="Xsa-7E-oKn"/>
+                                                <constraint firstAttribute="trailing" secondItem="sfW-Ch-VYM" secondAttribute="trailing" constant="20" id="cAa-hA-lh8"/>
                                                 <constraint firstItem="qBd-G3-t9H" firstAttribute="leading" secondItem="uwn-iU-Aid" secondAttribute="leading" constant="10" id="f07-Us-RIG"/>
                                                 <constraint firstAttribute="trailing" secondItem="qmO-Wv-ITl" secondAttribute="trailing" id="hxH-GJ-8dJ"/>
-                                                <constraint firstItem="sfW-Ch-VYM" firstAttribute="leading" secondItem="uwn-iU-Aid" secondAttribute="leading" id="jRW-vZ-3hA"/>
                                                 <constraint firstItem="qBd-G3-t9H" firstAttribute="top" secondItem="qmO-Wv-ITl" secondAttribute="bottom" id="lUX-p6-UCg"/>
-                                                <constraint firstAttribute="bottom" secondItem="qBd-G3-t9H" secondAttribute="bottom" constant="35" id="oPD-FL-LIp"/>
+                                                <constraint firstAttribute="bottom" secondItem="qBd-G3-t9H" secondAttribute="bottom" constant="50" id="oPD-FL-LIp"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="316" height="537"/>
@@ -135,7 +131,7 @@
                             <constraint firstItem="861-cm-8h5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9wf-At-p3L"/>
                             <constraint firstItem="861-cm-8h5" firstAttribute="top" secondItem="nMh-SY-k4o" secondAttribute="bottom" constant="8" id="Fst-YH-ZVf"/>
                             <constraint firstItem="5OI-bA-sWv" firstAttribute="top" secondItem="861-cm-8h5" secondAttribute="bottom" constant="49" id="JC9-fK-g16"/>
-                            <constraint firstItem="5OI-bA-sWv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="OXm-0c-4oE"/>
+                            <constraint firstItem="5OI-bA-sWv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OXm-0c-4oE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5OI-bA-sWv" secondAttribute="bottom" constant="50" id="QdZ-L6-3My"/>
                             <constraint firstItem="vu2-AR-NiR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="R63-BA-XOm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nMh-SY-k4o" secondAttribute="trailing" constant="20" id="aHb-6C-1ko"/>

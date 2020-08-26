@@ -21,10 +21,10 @@ class CardCell: UICollectionViewCell {
     @IBOutlet weak var DisLikeB: UIButton!
     
     override func awakeFromNib() {
-
+        
         LikeB.layer.cornerRadius = LikeB.frame.size.height / 4
         DisLikeB.layer.cornerRadius = DisLikeB.frame.size.height / 4
-
+        
         
 
     }
@@ -42,5 +42,6 @@ class CardCell: UICollectionViewCell {
         cellDelegate?.ButtonPressed(index: (index?.row)!,buttonName:(sender.titleLabel?.text)!)
 
     }
-    
+   
+
 }
